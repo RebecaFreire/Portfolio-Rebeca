@@ -1,62 +1,110 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
   font-family: 'Sora', sans-serif;
-  margin: 0;
-  background: #f9f7fc;
+  background-color: #f9f7fc;
   color: #333;
+  line-height: 1.6;
 }
 
-.hero {
+/* Cabeçalho */
+header {
   background: linear-gradient(135deg, #b38cd9, #6c9bd1);
   color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #fff;
-  color: #6c4ab6;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-.cta:hover { background: #f0e6ff; }
-
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.cards {
+nav ul {
+  list-style: none;
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover { color: #f0e6ff; }
+
+.hero { margin-top: 40px; }
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #6c4ab6;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta:hover { background-color: #f0e6ff; }
+
+/* Seções */
+main { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+section { margin-bottom: 60px; }
+
+/* Sobre Mim */
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.sobre-conteudo img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.tags { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+.tags span {
+  background-color: #e6ddf5;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Cards (Projetos e Jornada) */
+.cards { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
 .card {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 250px;
+  text-align: center;
 }
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #6c4ab6;
-  color: #fff;
-  text-decoration: none;
+.card img {
+  width: 100%;
   border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
-.btn:hover {
-  background-color: #b38cd9;
+/* Habilidades */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.skills-grid span {
+  background: #d9e6f2;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* Contato */
+.contato a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #6c4ab6;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }

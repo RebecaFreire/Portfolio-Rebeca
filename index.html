@@ -1,59 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Rebeca</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Rebeca Freire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Hero (cabeçalho com chamada principal) -->
-  <header class="hero">
-    <h1>Olá, eu sou a Rebeca 👩‍💻</h1>
-    <p>Desenvolvedora e Analista apaixonada por tecnologia</p>
-    <a href="#contato" class="cta">Entre em contato</a>
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <h1>Rebeca Freire</h1>
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#jornada">Jornada</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h2>Transformando ideias em soluções digitais de impacto</h2>
+      <a href="#projetos" class="cta">Ver projetos</a>
+    </section>
   </header>
 
-  <!-- Seção de destaque -->
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou Técnica em Informática e graduanda em Gestão para TI. Crio soluções digitais com foco em impacto real.</p>
-  </section>
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Sobre Mim -->
+    <section id="sobre" class="sobre">
+      <div class="sobre-conteudo">
+        <img src="imagens/rebeca.png" alt="Foto de Rebeca" />
+        <div class="sobre-texto">
+          <h3>Sobre Mim</h3>
+          <p><strong>Sou a Rebeca Freire</strong></p>
+          <p><strong>Técnica em Informática (ETEC)</strong> e graduanda em <strong>Gestão para Tecnologia da Informação (FATEC)</strong>.</p>
+          <p>Tenho curiosidade afiada e paixão por construir soluções digitais. Transformo desafios em oportunidades com foco em usabilidade, performance e impacto real.</p>
+          <div class="tags">
+            <span>#Python 🐍</span>
+            <span>#PowerBI 📊</span>
+            <span>#FullStack 🌐</span>
+            <span>#JavaScript ✨</span>
+            <span>#React ⚛️</span>
+            <span>#MulheresEmTech 👩‍💻</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
- <!-- Projetos -->
-<section id="projetos" class="projetos">
-  <h3>Projetos em Destaque</h3>
-  <div class="cards">
-    <div class="card">
-      <h4>Sistema Bancário</h4>
-      <p>Aplicação em Java simulando operações bancárias.</p>
-      <a href="https://github.com/RebecaFreire/Sistema-bancario-atualizado" target="_blank" class="btn">Ver no GitHub</a>
-    </div>
-    <div class="card">
-      <h4>Sistema de RH</h4>
-      <p>Gerenciamento de recursos humanos com cadastro e relatórios.</p>
-      <a href="https://github.com/RebecaFreire/sistema-rh" target="_blank" class="btn">Ver no GitHub</a>
-    </div>
-    <div class="card">
-      <h4>Piscine 42 C</h4>
-      <p>Exercícios e desafios da formação intensiva em C da 42.</p>
-      <a href="https://github.com/RebecaFreire/Piscine_42_C_Rebeca" target="_blank" class="btn">Ver no GitHub</a>
-    </div>
-  </div>
-</section>
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+      <h3>Projetos em Destaque</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Dashboard PowerBI</h4>
+          <p>Visualização de dados interativos para análise de negócios.</p>
+        </div>
+        <div class="card">
+          <h4>Aplicação React</h4>
+          <p>SPA responsiva com integração de APIs.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Vamos conversar?</p>
-    <a href="mailto:rebecahlfreire@hotmail.com">✉️ Email</a>
-    <a href="https://www.linkedin.com/in/rebeca-freire-1729501a5/" target="_blank">💼 LinkedIn</a>
-    <a href="https://github.com/RebecaFreire" target="_blank">🐙 GitHub</a>
-  </section>
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
+      <h3>Habilidades</h3>
+      <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Python</span>
+        <span>PowerBI</span>
+      </div>
+    </section>
 
+    <!-- Jornada Acadêmica -->
+    <section id="jornada">
+      <h3>Minha Jornada Acadêmica</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="imagens/projetopunesp.jpg" alt="Projeto UNESP">
+          <h4>Projeto de Pesquisa - UNESP</h4>
+          <p>Mobilização articular e educação postural.</p>
+        </div>
+        <div class="card">
+          <img src="imagens/larpermanencia.jpg" alt="Casa de longa permanência">
+          <h4>Atuação em Saúde</h4>
+          <p>Serviço em saúde na UNESP – casa de longa permanência.</p>
+        </div>
+        <div class="card">
+          <img src="imagens/fatec1.jpg" alt="Semana de Tecnologia FATEC">
+          <h4>Semana de Tecnologia</h4>
+          <p>Participação na FATEC Guaratinguetá (2023).</p>
+        </div>
+        <div class="card">
+          <img src="imagens/fatec2.jpeg" alt="Semana de Tecnologia FATEC">
+          <h4>Semana de Tecnologia</h4>
+          <p>Participação na FATEC Guaratinguetá (2025).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h3>Vamos conversar?</h3>
+      <p>Me mande uma mensagem e vamos criar algo incrível.</p>
+      <a href="mailto:rebecahlfreire@hotmail.com">✉️ Email</a>
+      <a href="https://www.linkedin.com/in/rebeca-freire-1729501a5/" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/RebecaFreire" target="_blank">🐙 GitHub</a>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Rebeca Freire</p>
+    <p>© 2025 Rebeca. Todos os direitos reservados.</p>
   </footer>
 
 </body>
