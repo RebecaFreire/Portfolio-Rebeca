@@ -1,4 +1,20 @@
 /* Reset */
+:root {
+  --bg-color: #0b1020;
+  --bg-alt: #101730;
+  --surface-color: rgba(255, 255, 255, 0.04);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --accent: #5d8bff;
+  --accent-strong: #8f9bff;
+  --text-primary: #f5f7ff;
+  --text-secondary: #b7c0d8;
+  --gradient: linear-gradient(135deg, rgba(93, 139, 255, 0.8), rgba(173, 125, 255, 0.7));
+  --shadow: 0 24px 48px rgba(7, 10, 18, 0.45);
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --transition: 0.3s ease;
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {

@@ -1,124 +1,252 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Rebeca Freire</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio • Rebeca Freire</title>
+  <meta name="description" content="Portfólio da Rebeca Freire — Gestão em Tecnologia da Informação, dados e impacto social." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1rZ8V26BpV9aJJF4wC15w7GZ+MT1oA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Cabeçalho -->
-  <header>
-    <nav>
-      <h1>Rebeca Freire</h1>
-      <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
+  <header class="site-header" id="topo">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a href="#topo" class="brand" aria-label="Ir para o topo">rebeca.dev</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#jornada">Jornada</a></li>
+        <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <section class="hero">
-      <h2>Transformando ideias em soluções digitais de impacto</h2>
-      <a href="#projetos" class="cta">Ver projetos</a>
-    </section>
   </header>
 
-  <!-- Conteúdo principal -->
   <main>
-    <!-- Sobre Mim -->
-    <section id="sobre" class="sobre">
-      <div class="sobre-conteudo">
-        <img src="imagens/rebeca.png" alt="Foto de Rebeca" />
-        <div class="sobre-texto">
-          <h3>Sobre Mim</h3>
-          <p><strong>Sou a Rebeca Freire</strong></p>
-          <p><strong>Técnica em Informática (ETEC)</strong> e graduanda em <strong>Gestão para Tecnologia da Informação (FATEC)</strong>.</p>
-          <p>Tenho curiosidade afiada e paixão por construir soluções digitais. Transformo desafios em oportunidades com foco em usabilidade, performance e impacto real.</p>
-          <div class="tags">
-            <span>#Python 🐍</span>
-            <span>#PowerBI 📊</span>
-            <span>#FullStack 🌐</span>
-            <span>#JavaScript ✨</span>
-            <span>#React ⚛️</span>
-            <span>#MulheresEmTech 👩‍💻</span>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <span class="hero-pill">Gestão em TI • Dados • Impacto social</span>
+        <h1 id="hero-title">Olá, eu sou a <span>Rebeca Freire</span></h1>
+        <p>
+          Estudante de Gestão em Tecnologia da Informação na FATEC Guaratinguetá. Conecto pessoas, dados e tecnologia para entregar
+          soluções com impacto real — da saúde pública à inovação corporativa.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:rebecahlfreire@hotmail.com">Vamos conversar</a>
+          <a class="btn btn-outline" href="#projetos">Ver projetos</a>
+        </div>
+        <ul class="social-links" aria-label="Redes sociais">
+          <li><a href="https://www.linkedin.com/in/rebeca-freire-1729501a5/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/RebecaFreire" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/rebecafreire" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="hero-portrait" aria-hidden="true">
+        <div class="portrait-frame">
+          <img src="rebs.png" alt="Retrato de Rebeca Freire" loading="lazy" />
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <div>
+            <p class="status-title">Pronta para novas missões</p>
+            <p class="status-subtitle">Colaborando com times multidisciplinares</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projetos -->
-    <section id="projetos" class="projetos">
-      <h3>Projetos em Destaque</h3>
-      <div class="cards">
-        <div class="card">
-          <h4>Dashboard PowerBI</h4>
-          <p>Visualização de dados interativos para análise de negócios.</p>
-        </div>
-        <div class="card">
-          <h4>Aplicação React</h4>
-          <p>SPA responsiva com integração de APIs.</p>
-        </div>
+    <section class="section" id="sobre">
+      <div class="section-heading">
+        <span class="section-kicker">Quem sou</span>
+        <h2>Sobre mim</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Jornada</h3>
+          <p>
+            De São Paulo para Guaratinguetá, trilhei a ETEC, passei pela UNESP com projetos em saúde e hoje mergulho em transformação
+            digital na FATEC. Sou movida por propósito, dados e a certeza de que tecnologia precisa ser humana.
+          </p>
+        </article>
+        <article class="about-card">
+          <h3>O que me move</h3>
+          <ul>
+            <li><strong>Impacto</strong> — soluções que melhoram a vida das pessoas.</li>
+            <li><strong>Equipe</strong> — colaboração, comunicação e empatia.</li>
+            <li><strong>Aprendizado contínuo</strong> — sempre explorando novas ferramentas.</li>
+          </ul>
+        </article>
+        <article class="about-card">
+          <h3>Além da tecnologia</h3>
+          <p>
+            Maratonista de séries, fã de esportes ao ar livre, voluntária em ações sociais e apaixonada por conectar diferentes áreas do
+            conhecimento.
+          </p>
+        </article>
       </div>
     </section>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="habilidades">
-      <h3>Habilidades</h3>
+    <section class="section" id="experiencia">
+      <div class="section-heading">
+        <span class="section-kicker">Trajetória</span>
+        <h2>Experiências e destaques</h2>
+      </div>
+      <div class="timeline" aria-label="Linha do tempo de experiências">
+        <article class="timeline-item">
+          <div class="timeline-point"></div>
+          <div class="timeline-content">
+            <h3>FATEC Guaratinguetá — Gestão em TI</h3>
+            <p>Exploro inovação, dados e projetos colaborativos com foco em transformação digital e cultura ágil.</p>
+            <span class="timeline-meta">2024 • Presente</span>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-point"></div>
+          <div class="timeline-content">
+            <h3>UNESP — Projetos de pesquisa e saúde</h3>
+            <p>Participei de ações de mobilização articular e iniciativas sociais conectando cuidado, tecnologia e empatia.</p>
+            <span class="timeline-meta">2022 • 2023</span>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-point"></div>
+          <div class="timeline-content">
+            <h3>Aspire Leaders Program — Harvard</h3>
+            <p>Programa global de liderança que reforçou minha visão estratégica e o compromisso com impacto social.</p>
+            <span class="timeline-meta">2025</span>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-point"></div>
+          <div class="timeline-content">
+            <h3>ETEC — Desenvolvimento de projetos comunitários</h3>
+            <p>Início da jornada em tecnologia, com protagonismo em iniciativas solidárias e organização de eventos.</p>
+            <span class="timeline-meta">2019 • 2021</span>
+          </div>
+        </article>
+      </div>
+      <div class="experience-gallery" aria-hidden="true">
+        <img src="fatec.png" alt="Semana de Tecnologia da FATEC" loading="lazy" />
+        <img src="projetopunesp.jpg" alt="Projeto UNESP" loading="lazy" />
+        <img src="larlongapermanencia.jpg" alt="Longa permanência" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="section-heading">
+        <span class="section-kicker">Stack</span>
+        <h2>Habilidades principais</h2>
+      </div>
       <div class="skills-grid">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>Python</span>
-        <span>PowerBI</span>
+        <article class="skill-card">
+          <h3>Dados &amp; Analytics</h3>
+          <p>Dashboards em Power BI, modelagem de dados, SQL e indicadores que conectam operação ao negócio.</p>
+          <div class="chip-row">
+            <span class="chip">Power BI</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Python</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <h3>Desenvolvimento</h3>
+          <p>Aplicações web em HTML, CSS e JavaScript com foco em experiência, acessibilidade e entrega contínua.</p>
+          <div class="chip-row">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <h3>Processos &amp; Pessoas</h3>
+          <p>Metodologias ágeis, facilitação de cerimônias, comunicação e liderança empática para engajar times.</p>
+          <div class="chip-row">
+            <span class="chip">Scrum</span>
+            <span class="chip">Kanban</span>
+            <span class="chip">UX Research</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- Jornada Acadêmica -->
-    <section id="jornada">
-      <h3>Minha Jornada Acadêmica</h3>
-      <div class="cards">
-        <div class="card">
-          <img src="imagens/projetopunesp.jpg" alt="Projeto UNESP">
-          <h4>Projeto de Pesquisa - UNESP</h4>
-          <p>Mobilização articular e educação postural.</p>
-        </div>
-        <div class="card">
-          <img src="imagens/larpermanencia.jpg" alt="Casa de longa permanência">
-          <h4>Atuação em Saúde</h4>
-          <p>Serviço em saúde na UNESP – casa de longa permanência.</p>
-        </div>
-        <div class="card">
-          <img src="imagens/fatec1.jpg" alt="Semana de Tecnologia FATEC">
-          <h4>Semana de Tecnologia</h4>
-          <p>Participação na FATEC Guaratinguetá (2023).</p>
-        </div>
-        <div class="card">
-          <img src="imagens/fatec2.jpeg" alt="Semana de Tecnologia FATEC">
-          <h4>Semana de Tecnologia</h4>
-          <p>Participação na FATEC Guaratinguetá (2025).</p>
-        </div>
+    <section class="section" id="projetos">
+      <div class="section-heading">
+        <span class="section-kicker">Portfólio</span>
+        <h2>Projetos em destaque</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-icon" aria-hidden="true">🧾</span>
+            <h3>Sistema RH</h3>
+          </div>
+          <p>Plataforma com indicadores de pessoas, performance e clima organizacional para decisões ágeis.</p>
+          <ul class="project-tags" aria-label="Tecnologias utilizadas">
+            <li>Power BI</li>
+            <li>Python</li>
+            <li>Team work</li>
+          </ul>
+          <a class="project-link" href="https://github.com/RebecaFreire/sistema-rh" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-icon" aria-hidden="true">🏦</span>
+            <h3>Sistema Bancário</h3>
+          </div>
+          <p>Gestão de contas, transações e automações financeiras com foco em segurança e escalabilidade.</p>
+          <ul class="project-tags" aria-label="Tecnologias utilizadas">
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Arquitetura limpa</li>
+          </ul>
+          <a class="project-link" href="https://github.com/RebecaFreire/Sistema-bancario-atualizado" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-icon" aria-hidden="true">🧠</span>
+            <h3>Piscine 42 C</h3>
+          </div>
+          <p>Desafios intensivos em linguagem C que fortalecem lógica, algoritmos e pensamento estruturado.</p>
+          <ul class="project-tags" aria-label="Tecnologias utilizadas">
+            <li>C</li>
+            <li>Git</li>
+            <li>Trabalho em equipe</li>
+          </ul>
+          <a class="project-link" href="https://github.com/RebecaFreire/Piscine_42_C_Rebeca" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
       </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="contato">
-      <h3>Vamos conversar?</h3>
-      <p>Me mande uma mensagem e vamos criar algo incrível.</p>
-      <a href="mailto:rebecahlfreire@hotmail.com">✉️ Email</a>
-      <a href="https://www.linkedin.com/in/rebeca-freire-1729501a5/" target="_blank">💼 LinkedIn</a>
-      <a href="https://github.com/RebecaFreire" target="_blank">🐙 GitHub</a>
+    <section class="section" id="contato">
+      <div class="section-heading">
+        <span class="section-kicker">Vamos criar algo incrível</span>
+        <h2>Entre em contato</h2>
+      </div>
+      <div class="contact-card">
+        <p>
+          Aberta a desafios que combinem tecnologia, dados e impacto social. Envie uma mensagem e vamos conversar sobre oportunidades,
+          projetos ou parcerias.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:rebecahlfreire@hotmail.com">Enviar e-mail</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/rebeca-freire" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>© 2025 Rebeca. Todos os direitos reservados.</p>
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Rebeca Freire. Construído com foco em propósito, tecnologia e pessoas.</p>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
