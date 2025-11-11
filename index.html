@@ -1,128 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rebeca | Desenvolvedora | Analista</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Rebeca</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h1>Rebeca Freire</h1>
-      <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#jornada">Jornada</a></li>
-        <li><a href="#fit-cultural">Cultura</a></li>
-        <li><a href="#documentacao">Documentação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <h2>Transformando ideias em soluções digitais de impacto</h2>
-      <a href="#projetos" class="cta">Ver projetos</a>
-    </section>
+  <!-- Hero (cabeçalho com chamada principal) -->
+  <header class="hero">
+    <h1>Olá, eu sou a Rebeca 👩‍💻</h1>
+    <p>Desenvolvedora e Analista apaixonada por tecnologia</p>
+    <a href="#contato" class="cta">Entre em contato</a>
   </header>
 
-  <main>
-    <section id="sobre" class="sobre">
-      <div class="sobre-conteudo">
-        <img src="rebs.png" alt="Foto de Rebeca" />
-        <div class="sobre-texto">
-          <h3>Sobre Mim</h3>
-          <p><strong>Sou a Rebeca Freire</strong></p>
-          <p><strong>Técnica em Informática (ETEC)</strong> e graduanda em <strong>Gestão para Tecnologia da Informação (FATEC)</strong>.</p>
-          <p>Tenho curiosidade afiada e paixão por construir soluções digitais. Transformo desafios em oportunidades com foco em usabilidade, performance e impacto real.</p>
-          <p>Acredito na tecnologia como ponte entre ideias e pessoas — por isso crio códigos que resolvem, conectam e inspiram.</p>
-          <div class="tags">
-            <span>#Python 🐍</span>
-            <span>#PowerBI 📊</span>
-            <span>#FullStack 🌐</span>
-            <span>#JavaScript ✨</span>
-            <span>#React ⚛️</span>
-            <span>#RH 💼</span>
-            <span>#MulheresEmTech 👩‍💻</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Seção de destaque -->
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou Técnica em Informática e graduanda em Gestão para TI. Crio soluções digitais com foco em impacto real.</p>
+  </section>
 
-    <section id="projetos" class="projetos">
-      <h3>Projetos em Destaque</h3>
-      <div class="cards">
-        <!-- Cards de projeto -->
-        <!-- ... (mantido como está) ... -->
-      </div>
-    </section>
+ <!-- Projetos -->
+<section id="projetos" class="projetos">
+  <h3>Projetos em Destaque</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Sistema Bancário</h4>
+      <p>Aplicação em Java simulando operações bancárias.</p>
+      <a href="https://github.com/RebecaFreire/Sistema-bancario-atualizado" target="_blank" class="btn">Ver no GitHub</a>
+    </div>
+    <div class="card">
+      <h4>Sistema de RH</h4>
+      <p>Gerenciamento de recursos humanos com cadastro e relatórios.</p>
+      <a href="https://github.com/RebecaFreire/sistema-rh" target="_blank" class="btn">Ver no GitHub</a>
+    </div>
+    <div class="card">
+      <h4>Piscine 42 C</h4>
+      <p>Exercícios e desafios da formação intensiva em C da 42.</p>
+      <a href="https://github.com/RebecaFreire/Piscine_42_C_Rebeca" target="_blank" class="btn">Ver no GitHub</a>
+    </div>
+  </div>
+</section>
 
-    <section id="habilidades" class="habilidades">
-      <h3>Habilidades</h3>
-      <div class="skills-grid">
-        <!-- Cards de habilidades -->
-        <!-- ... (mantido como está) ... -->
-      </div>
-    </section>
-
-    <section id="jornada">
-      <h3>Minha Jornada Acadêmica</h3>
-      <div class="carousel">
-        <figure>
-          <img src="imagens/projetopunesp.jpg" alt="Apresentação de projeto de pesquisa na UNESP">
-          <figcaption>Projeto de pesquisa na UNESP – mobilização articular e educação postural</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/larpermanencia.jpg" alt="Serviço em saúde em casa de longa permanência">
-          <figcaption>Atuação em saúde na UNESP – casa de longa permanência</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/unespcic.jpeg" alt="Participação no Congresso de Iniciação Científica">
-          <figcaption>Congresso de Iniciação Científica – UNESP</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/fatec1.jpg" alt="Semana de Tecnologia na FATEC">
-          <figcaption>Semana de Tecnologia – FATEC Guaratinguetá (2023)</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/fatec2.jpeg" alt="Semana de Tecnologia na FATEC">
-          <figcaption>Semana de Tecnologia – FATEC Guaratinguetá (2025)</figcaption>
-        </figure>
-      </div>
-      <p>Minha trajetória acadêmica começou na ETEC, passou pela UNESP — onde participei de projetos de pesquisa, ações em saúde e congressos científicos — e hoje se fortalece na FATEC, com foco em tecnologia, inovação e impacto social.</p>
-    </section>
-
-    <section id="fit-cultural">
-      <h3>Uma Embraer. Um só time.</h3>
-      <p>
-        Escolhi este pilar porque acredito profundamente na força do trabalho em equipe. Em projetos acadêmicos e sociais, aprendi que resultados extraordinários só acontecem quando há colaboração, empatia e responsabilidade compartilhada.
-      </p>
-      <p>
-        Em ambientes como a UNESP e a FATEC, vivenciei na prática o que significa agir com generosidade, escutar com atenção e empoderar o outro — valores que fazem parte da cultura da Embraer e que levo comigo em cada desafio.
-      </p>
-    </section>
-
-    <section id="documentacao">
-      <h3>Declaração de Matrícula</h3>
-      <p>Documento disponível para download:</p>
-      <a href="docs/declaracao.pdf" download>📎 Baixar Declaração</a>
-    </section>
-
-    <section id="contato" class="contato">
-      <h3>Vamos conversar?</h3>
-      <p>Me mande uma mensagem e vamos criar algo incrível.</p>
-      <a href="mailto:rebecahlfreire@hotmail.com">✉️ rebecahlfreire@hotmail.com</a>
-      <a href="https://www.linkedin.com/in/rebeca-freire-1729501a5/" target="_blank">💼 LinkedIn</a>
-      <a href="https://github.com/RebecaFreire" target="_blank">🐙 GitHub</a>
-    </section>
-  </main>
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Vamos conversar?</p>
+    <a href="mailto:rebecahlfreire@hotmail.com">✉️ Email</a>
+    <a href="https://www.linkedin.com/in/rebeca-freire-1729501a5/" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/RebecaFreire" target="_blank">🐙 GitHub</a>
+  </section>
 
   <footer>
-    <p>© 2025 Rebeca. Todos os direitos reservados.</p>
+    <p>© 2025 Rebeca Freire</p>
   </footer>
 
 </body>
 </html>
-

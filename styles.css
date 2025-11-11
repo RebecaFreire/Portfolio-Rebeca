@@ -1,99 +1,62 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Sora', sans-serif;
-  background-color: #f9f7fc;
+  margin: 0;
+  background: #f9f7fc;
   color: #333;
-  line-height: 1.6;
-}
-
-/* Cabeçalho com gradiente */
-header {
-  background: linear-gradient(135deg, #b38cd9, #6c9bd1);
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #f0e6ff;
 }
 
 .hero {
-  margin-top: 40px;
+  background: linear-gradient(135deg, #b38cd9, #6c9bd1);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
 }
 
 .cta {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #fff;
   color: #6c4ab6;
-  font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cta:hover { background: #f0e6ff; }
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #6c4ab6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.cta:hover {
-  background-color: #f0e6ff;
-}
-
-/* Seções principais */
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-section {
-  margin-bottom: 60px;
-}
-
-/* Sobre Mim */
-.sobre-conteudo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.sobre-conteudo img {
-  width: 220px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.tags {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tags span {
-  background-color: #e6ddf5;
-  padding: 6px 12px;
-  border-radius: 20px
+.btn:hover {
+  background-color: #b38cd9;
 }
